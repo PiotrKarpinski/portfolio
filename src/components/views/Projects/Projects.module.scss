@@ -1,0 +1,77 @@
+@import '../../../style/settings.scss';
+
+.component {
+	background-color: $color-four;
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
+
+}
+
+.wrapper {
+	padding: $base-size*8;
+	background-color: $color-three;
+	margin: auto;
+	text-align: center;
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
+}
+
+.row {
+	margin-top: $base-size*2;
+	display: flex;
+	justify-content: space-around;
+}
+
+.link {
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	font-size: $base-size*2;
+	color: $color-four;
+	display: inline-block;
+	text-decoration: none;
+	transition: $transition;
+}
+
+.link:hover {
+	letter-spacing: 12px;
+	filter: grayscale(50%);
+}
+
+
+
+.box{
+	border: 4px solid $color-four;
+	border-radius: 12px;
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
+	width: 40%;
+	padding: $base-size;
+	height: 40vh;
+
+}
+.boxTwo{
+	border: 4px solid $color-four;
+	border-radius: 12px;
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
+	width: 40%;
+	padding: $base-size;
+	background: url(../../../images/photoshop.jpg);
+	height: 40vh;
+}
+.boxThree{
+	border: 4px solid $color-four;
+	border-radius: 12px;
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
+	width: 40%;
+	padding: $base-size;
+	background: url(../../../images/departure.jpg);
+	height: 40vh;
+}
+.boxFour{
+	border: 4px solid $color-four;
+	border-radius: 12px;
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
+    width: 40%;
+	padding: $base-size;
+	background: url(../../../images/audio.jpg);
+	height: 40vh;
+}
+

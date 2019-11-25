@@ -1,0 +1,29 @@
+@import '../../../style/settings.scss';
+
+.component {
+	background-color: $color-four;
+	padding: 0 $base-size*6;
+}
+
+.title {
+
+	margin: $base-size*2 auto;
+	text-align: center;
+}
+
+.wrapper {
+	background-color: $color-three;
+
+}
+
+
+.btn {
+	font-size: $base-size*2;
+	text-decoration: none;
+	color: $color-three;
+}
+
+.projects {
+	margin-top: $base-size;
+	transition: $transition;
+}

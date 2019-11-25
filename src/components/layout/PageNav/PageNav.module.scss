@@ -1,0 +1,55 @@
+@import '../../../style/settings.scss';
+
+.component {
+	padding: $base-size 0;
+  background-color: $color-three;
+  text-align: center;
+  box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.48);
+}
+
+.projects {
+margin: 0 auto;
+text-align: center;
+opacity: 0;
+transition: $transition;
+height: 0;
+background-color: $color-one;
+
+a {
+  text-align: center;
+  height: 0;
+  width:  0;
+  display: table;
+
+}
+}
+
+
+
+.link {
+	font-weight: bold;
+	font-size: 16px;
+	transition: $transition;
+	margin: auto;
+	padding: 13px;
+	text-decoration: none;
+	color: $color-two;
+	text-align: center;
+}
+
+.link:hover {
+	
+	color: $color-one;
+	background-color: $color-two;
+}
+
+.title {
+  font-size: ($base-size * 4);
+}
+
+.arrow {
+	cursor: pointer;
+	margin: auto;
+	color: $color-two;
+	font-size: $base-size*2;
+}

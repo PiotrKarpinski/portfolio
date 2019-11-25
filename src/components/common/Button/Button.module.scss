@@ -1,0 +1,18 @@
+@import '../../../style/settings.scss';
+
+.component {
+	padding: $base-size 0;
+  background-color: $color-one;
+  text-align: center;
+
+}
+
+.btn {
+	color: $color-two;
+	text-decoration: none;
+	transition: $transition;
+}
+
+.btn:hover {
+	letter-spacing: 12px;
+}

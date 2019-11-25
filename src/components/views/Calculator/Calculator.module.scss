@@ -1,0 +1,42 @@
+@import '../../../style/settings.scss';
+
+
+.component {
+	position: relative;
+}
+
+.main {
+	box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
+	background-color: $color-three;
+	margin: $base-size*2 auto;
+    position: static;
+    padding: $base-size*2;
+
+}
+
+
+
+
+.title {
+    text-align:center;
+	font-size:36px;
+}
+
+.textview {
+	width: 218px;
+	padding: $base-size*0.5;
+	font-size: $base-size*2;
+	margin: $base-size*0.5;
+
+}
+
+.btn {
+	cursor: pointer;
+	width: $base-size*4;
+	height: $base-size*4;
+	font-size: $base-size*2;
+	margin: $base-size*0.2;
+
+}
+
+
