@@ -20,7 +20,7 @@ const Projects = (props) => (
 	</div>
 	<div className={styles.row}>
 	<div className={styles.box}>
-	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/departure`}>DEPARTURE</Link>
+	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/organizer`}>ORGANIZER</Link>
 	</div>
 	<div className={styles.box}>
 	<Link  className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/audio`}>AUDIO</Link>

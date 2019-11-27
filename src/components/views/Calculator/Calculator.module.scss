@@ -11,7 +11,11 @@
 	margin: $base-size*2 auto;
     position: static;
     padding: $base-size*2;
+    display:table;
+}
 
+.keyboard {
+	margin: auto;
 }
 
 
@@ -23,6 +27,7 @@
 }
 
 .textview {
+	text-align: center;
 	width: 218px;
 	padding: $base-size*0.5;
 	font-size: $base-size*2;

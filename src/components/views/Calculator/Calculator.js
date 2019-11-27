@@ -62,6 +62,7 @@ class Calculator extends React.Component {
   <form>
     <input className={styles.textview} value={this.state.value} onChange={this.handleChange} name='textview' />
   </form>
+  <div className={styles.keyboard}>
   <table>
     <tbody>
       <tr>
@@ -100,6 +101,7 @@ class Calculator extends React.Component {
 
     </tbody>
   </table>
+  </div>
 
   </div>
     <Button text='Go back'/>
