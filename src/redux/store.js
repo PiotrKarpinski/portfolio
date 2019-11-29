@@ -1,14 +1,20 @@
 import {combineReducers, createStore} from 'redux';
+import organizerReducer from './organizerRedux';
 
 const initialState = {
+	organizer:
+	 {
+ id: 1,
  title:'',
  daily:false,
- description:'',
- time:'06:00',
- duration:''
+ description:'Describe your task',
+ time:'00:00',
+ duration: 0,
+ color: '#fff',}
 };
 
 const reducers = {
+	organizer: organizerReducer,
 };
 
 Object.keys(initialState).forEach(item => {
