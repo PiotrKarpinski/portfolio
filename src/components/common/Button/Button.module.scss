@@ -1,19 +1,26 @@
 @import '../../../style/settings.scss';
 
 .component {
-	padding: $base-size 0;
-  background-color: $color-one;
+  padding: $base-size*2 0;
   text-align: center;
+  display: block;
+  margin: auto;
 
 }
 
 .btn {
+    box-shadow: 0px 12px 43px -8px rgba(0,0,0,0.58);
+	border-radius: 12px;
+    padding: $base-size*2  $base-size*4;
+    border: 6px transparent solid ;
+	background-color: transparent;
 	font-size: $base-size*2;
-	color: $color-two;
+	color: $color-one;
 	text-decoration: none;
 	transition: $transition;
 }
 
 .btn:hover {
-	letter-spacing: 12px;
+
+background-color: $color-four;
 }

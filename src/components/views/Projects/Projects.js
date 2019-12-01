@@ -1,33 +1,26 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import {Link} from 'react-router-dom';
+import './theme.scss';
 
-const Projects = (props) => (
+const Projects = ({color}) => (
 
  
-    
- 
 
-
-  <div className={styles.wrapper}>
+  <div className={`wrapper ${color}`}>
+  <h1 className={styles.title}>MY PROJECTS:</h1>
  	<div className={styles.row} >
   	<div className={styles.box}>
-    <Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/calculator`}>CALCULATOR</Link>
+    <Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/calculator`}>CALCULATOR<br/><i className='icon fa fa-calculator'/></Link>
+   
     </div>
-    <div className={styles.box}>
-	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/photoshop`}>PHOTOSHOP</Link>
-	</div>
-	</div>
-	<div className={styles.row}>
+	
 	<div className={styles.box}>
-	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/organizer`}>ORGANIZER</Link>
-	</div>
-	<div className={styles.box}>
-	<Link  className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/audio`}>AUDIO</Link>
-	</div>
-    </div>
-    </div>
+	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/organizer`}>ORGANIZER<br/><i className='icon fa fa-calendar'/></Link>
 
+    </div>
+    </div>
+    </div>
 	)
 
 export default Projects;

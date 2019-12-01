@@ -1,0 +1,19 @@
+@import './settings.scss';
+
+.default {
+  transition: $transition;
+  background-color: $color-default;
+
+}
+
+.frozen {
+  transition: $transition;
+  background-color: $color-frozen;
+
+}
+
+.dark {
+  transition: $transition;
+  background-color: $color-dark;
+
+}

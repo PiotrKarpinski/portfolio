@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Calculator.module.scss';
 import Button from '../../common/Button/Button';
-import {getHeight} from '../../features/showHide'
 
 
 
@@ -31,8 +30,16 @@ class Calculator extends React.Component {
     }
 
     equal() {
-
+      let arr = this.state.value
+      var lastChar = arr[arr.length -1]
+      
+      console.log(lastChar)
+      if (isNaN(lastChar)===false){
       this.setState({value: ''+eval(this.state.value)+''})
+
+      }
+       
+    
     }
 
     clean() {   
@@ -41,9 +48,6 @@ class Calculator extends React.Component {
 
     back() {
       let arr = this.state.value
-     
-
-
       this.setState({value: arr.substring(0,arr.length-1)})
       console.log(arr)
       
@@ -55,9 +59,9 @@ class Calculator extends React.Component {
     return (
 
   <div className={styles.component}>
-  <div className={styles.title}>
-    <h2 className='title'>Calculator</h2>
-  </div>
+
+    <h2 className={styles.title}>Calculator</h2>
+  
   <div className={styles.main}>
   <form>
     <input className={styles.textview} value={this.state.value} onChange={this.handleChange} name='textview' />
@@ -104,7 +108,7 @@ class Calculator extends React.Component {
   </div>
 
   </div>
-    <Button text='Go back'/>
+    <Button text='fa fa-level-up'/>
 
 
   </div>

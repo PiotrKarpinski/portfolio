@@ -1,19 +1,23 @@
 import {combineReducers, createStore} from 'redux';
 import organizerReducer from './organizerRedux';
+import changeColorReducer from './changeColorRedux';
 
 const initialState = {
-	organizer:
-	 {
- id: 1,
- title:'',
- daily:false,
- description:'Describe your task',
- time:'00:00',
- duration: 0,
- color: '#fff',}
-};
+  colorTheme: 'default',  	
+	organizer:  {
+     id: 1,
+     title:'',
+     daily:false,
+     description:'Describe your task',
+     time:'00:00',
+     duration: 0,
+     color: '#fff'
+    },
+  }
+
 
 const reducers = {
+	colorTheme: changeColorReducer,
 	organizer: organizerReducer,
 };
 

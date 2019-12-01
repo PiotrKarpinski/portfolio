@@ -2,19 +2,9 @@
 
 
 
-.main {
-	box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
-	background-color: $color-three;
-	margin: $base-size*2 auto;
-    position: static;
-    padding: $base-size*2;
-    display: table;
-    height: 500px;
-    width: 500px;
-}
 
 .circle {	
-	box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
+   box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
    width: 500px;
    height: 500px;
    border-radius: 250px;
@@ -22,7 +12,11 @@
    background: $color-two;
 
 }
+.link:hover {	
 
+   background-color: $color-one;
+
+}
 
 .innerCircle {	
 	box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
@@ -59,7 +53,7 @@
 	transition: $transition;
 }
 
-.text {
+.addLink {
 	margin: 0;
 	transform: translateX(-50%) translateY(-50%);
     top: 50%;
@@ -76,18 +70,17 @@
 }
 
 .title {
-	padding: $base-size;
-	font-size: $base-size*2;
-	margin: $base-size auto;
-	width: 100%;
+    text-align:center;
+	font-size:36px;
 }
+
 .daily {	
 	display: none;
 	font-size: $base-size*2;
 
 }
 
-.description {
+.text {
 	padding: $base-size;
 	font-size: $base-size*2;
 	margin: $base-size auto;

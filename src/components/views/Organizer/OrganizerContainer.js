@@ -4,12 +4,13 @@ import OrganizerAdd from './OrganizerAdd';
 
 
 const mapStateToProps = state => ({
+	color: state.colorTheme,
     title: state.organizer.title,
     daily: state.organizer.daily,
     description: state.organizer.description,
     time: state.organizer.time,
     duration: state.organizer.duration,
-    color: state.organizer.color,
+    barColor: state.organizer.color,
 });
 
 const mapDispatchToProps = (dispatch,props) => ({

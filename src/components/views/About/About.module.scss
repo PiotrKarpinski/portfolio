@@ -1,9 +1,20 @@
 @import '../../../style/settings.scss';
 
 
-.about {
-	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
-	margin: $base-size*4 0;
-    padding: $base-size;
-	background-color: $color-three;
+
+
+.wrapper {
+	margin: auto;
+	border-radius: 12px;
+	border: 6px solid $color-four;
+	text-align: center;
+	width: 30vw;
+}
+
+.title {
+	font-size: $base-size*4;
+}
+
+.text {
+	font-size: $base-size*2;
 }

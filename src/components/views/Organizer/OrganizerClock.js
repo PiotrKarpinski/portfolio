@@ -2,34 +2,32 @@ import React from 'react';
 import styles from './Organizer.module.scss';
 import Button from '../../common/Button/Button';
 import {Link} from 'react-router-dom';
-
+import './theme.scss';
 
 
 class OrganizerClock extends React.Component {
-  constructor(props){
-    super(props)
-  }
+
   render() {
-    const {color, duration} = this.props
-    const circleStyle = {background: 'conic-gradient('+ color +' '+ (duration)*15 +'deg '+(duration)*15 + 'deg, #fff ' + (duration)*15 + 'deg 360deg'}
+    const {barColor, duration, color} = this.props
+    const circleStyle = {background: 'conic-gradient('+ barColor +' '+ (duration)*15 +'deg '+(duration)*15 + 'deg, #fff ' + (duration)*15 + 'deg 360deg'}
     console.log(circleStyle)
 
 
 return(  
 
   <div className={styles.component}>
-    <h2>Organizer</h2>
-    <div className={styles.main}>
+    <h2 className={styles.title}>Organizer</h2>
+    <div className={`main ${color}`}>
 
       <div className={styles.circle} style={circleStyle}>
         <div className={styles.innerCircle}>              
       	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/organizer/add`}></Link>
-        <p className={styles.text}>Add something!</p>
+        <p className={styles.addLink}>Click!</p>
         
         </div>
       </div>
     </div>
-    <Button text='Go back' />
+    <Button text='fa fa-level-up'/>
   </div>
 
 	)}};

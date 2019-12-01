@@ -1,22 +1,16 @@
 @import '../../../style/settings.scss';
 
-.component {
-	padding: $base-size 0;
-  background-color: $color-three;
-  text-align: center;
-  box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.48);
-}
 
 .projects {
 margin: 0 auto;
-text-align: center;
+text-align: left;
 opacity: 0;
 transition: $transition;
 height: 0;
 background-color: $color-one;
 
 a {
-  text-align: center;
+  text-align: left;
   height: 0;
   width:  0;
   display: table;
@@ -28,13 +22,12 @@ a {
 
 .link {
 	font-weight: bold;
-	font-size: 16px;
+	font-size: $base-size*2;
 	transition: $transition;
-	margin: auto;
 	padding: 13px;
 	text-decoration: none;
 	color: $color-two;
-	text-align: center;
+	text-align: left;
 }
 
 .link:hover {
@@ -48,8 +41,10 @@ a {
 }
 
 .arrow {
+	margin: auto 4px;
+	background-color: $color-one;
+	border: none;
 	cursor: pointer;
-	margin: auto;
 	color: $color-two;
 	font-size: $base-size*2;
 }

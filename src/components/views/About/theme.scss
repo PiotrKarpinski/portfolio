@@ -1,0 +1,10 @@
+@import '../../../style/settings.scss';
+@import '../../../style/colors.scss';
+
+
+.component {
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
+	margin: $base-size*4 0;
+    padding: $base-size*2;
+	background-color: $color-default;
+}

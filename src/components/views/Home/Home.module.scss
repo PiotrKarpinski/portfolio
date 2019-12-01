@@ -12,7 +12,7 @@
 }
 
 .wrapper {
-	background-color: $color-three;
+	background-color: $color-default;
 
 }
 
@@ -20,10 +20,11 @@
 .btn {
 	font-size: $base-size*2;
 	text-decoration: none;
-	color: $color-three;
+	color: $color-default;
 }
 
 .projects {
+	height: 80vh;
 	margin-top: $base-size;
 	transition: $transition;
 }

@@ -1,0 +1,16 @@
+@import '../../../style/settings.scss';
+@import '../../../style/colors.scss';
+
+
+.wrapper {
+	padding: $base-size*8;
+	margin: auto;
+	text-align: center;
+	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.18) , 32px 12px 43px -8px rgba(0,0,0,0.18);
+}
+
+.icon {
+	margin: $base-size auto;
+	font-size: $base-size*4;
+	padding: $base-size*2;
+}

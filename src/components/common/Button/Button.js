@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Button = ({text}) => (
 
   <div className={styles.component}>
-    <Link to ={`${process.env.PUBLIC_URL}/projects`}className={styles.btn}>{text}</Link>
+    <Link to ={`${process.env.PUBLIC_URL}/`}className={styles.btn}><i className={text}/></Link>
   </div>
 
 

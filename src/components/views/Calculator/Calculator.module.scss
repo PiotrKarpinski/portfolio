@@ -7,7 +7,7 @@
 
 .main {
 	box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
-	background-color: $color-three;
+	background-color: $color-default;
 	margin: $base-size*2 auto;
     position: static;
     padding: $base-size*2;
@@ -15,6 +15,7 @@
 }
 
 .keyboard {
+
 	margin: auto;
 }
 
@@ -36,12 +37,23 @@
 }
 
 .btn {
+	border-radius: 4px;
+	border: none;
+	background-color: $color-four;
+	color: $color-one;
 	cursor: pointer;
 	width: $base-size*4;
 	height: $base-size*4;
 	font-size: $base-size*2;
 	margin: $base-size*0.2;
-
+    transition: all 0.2s;
 }
 
+.btn:hover {
 
+	box-shadow: 0px 12px 20px 19px rgba(0,0,0,0.08);
+	background-color: $color-one;
+	color: $color-four;
+
+
+}

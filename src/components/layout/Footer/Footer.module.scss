@@ -1,0 +1,28 @@
+@import '../../../style/settings.scss';
+
+.component {
+	width: 100%;
+	background-color: $color-four;
+}
+
+.text {
+	margin-right: $base-size;
+	float: left;
+	font-size: $base-size;
+	color: black;
+}
+
+.links {
+	margin-right: $base-size;
+	list-style-type: none;
+}
+
+.icon {
+	margin-right: 4px;
+	font-size: $base-size*2;
+	color: black;
+}
+
+.icon:hover {
+	color: $color-one;
+}
