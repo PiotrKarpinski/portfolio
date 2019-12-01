@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import Footer from './Footer';
+import Calculator from './Calculator';
 
 
 const mapStateToProps = state => ({
@@ -9,4 +9,4 @@ const mapStateToProps = state => ({
 
 
 
-export default connect(mapStateToProps)(Footer);
+export default connect(mapStateToProps)(Calculator);

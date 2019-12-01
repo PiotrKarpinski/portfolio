@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Calculator.module.scss';
 import Button from '../../common/Button/Button';
-
+import './theme.scss';
 
 
 class Calculator extends React.Component { 
@@ -54,15 +54,16 @@ class Calculator extends React.Component {
     }
 
 
-    render() {
 
+    render() {
+    const {color} = this.props
     return (
 
   <div className={styles.component}>
 
     <h2 className={styles.title}>Calculator</h2>
   
-  <div className={styles.main}>
+  <div className={`calculator ${color}`}>
   <form>
     <input className={styles.textview} value={this.state.value} onChange={this.handleChange} name='textview' />
   </form>

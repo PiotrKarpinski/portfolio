@@ -1,10 +1,9 @@
 import React from 'react';
 import 'rc-color-picker/assets/index.css';
 import styles from './Organizer.module.scss';
-import Button from '../../common/Button/Button';
 import {Link} from 'react-router-dom';
 import TimePicker from 'react-time-picker'
-import {Panel as ColorPickerPanel} from 'rc-color-picker';
+import ColorPicker from 'rc-color-picker';
 import './theme.scss';
 
 class OrganizerAdd extends React.Component { 
@@ -47,17 +46,31 @@ class OrganizerAdd extends React.Component {
       	<input type='text' name='title'  className={styles.text} onChange={this.handleChange} placeholder='Add title'/>
       	<input type='textarea' name='description' className={styles.text} onChange={this.handleChange} placeholder='Describe your task'/>
       	<input type='checkbox' name='daily' className={styles.daily} onChange={this.handleChange}/>
+        <div className={styles.container}>
+        <p className={styles.info}>Pick when you start:</p>
+        <TimePicker className={styles.time} onChange={this.handleTime} disableClock={true} value='00:00' clearIcon={null} />
+        <p className={styles.info}>Set how many hours will it take:</p>
+        <input type='number' name='duration' className={styles.duration} onChange={this.handleChange} placeholder='0'/>
+        <p className={styles.info}>And choose your task color:</p>
+    <ColorPicker
+      color={'#36c'}
+      alpha={100}
+      onChange={this.handleColor}
+      
+      placement="bottomLeft"
+      className={styles.colorPicker}
+    >
+      <span className="rc-color-picker-trigger" />
+    </ColorPicker>        
+    </div>        
 
-      	<ColorPickerPanel enableAlpha={false} color={'#345679'} onChange={this.handleColor} mode="RGB" />
-      	<TimePicker className={styles.time} onChange={this.handleTime} disableClock={true} value='00:00' clearIcon={null} />
-      	<input type='number' name='duration' className={styles.duration} onChange={this.handleChange} placeholder='0'/>
       </div>
       <div className={styles.buttons}>
      <Link className={styles.add} to ={`${process.env.PUBLIC_URL}/projects/organizer`} onClick={e => 
        {addToDo(this.state.value)}}><i className='fa fa-check' /></Link>
       </div>
     </div>
-    <Button text='Go back' />
+ 
   </div>
 
 	)

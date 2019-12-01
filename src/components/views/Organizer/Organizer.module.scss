@@ -18,6 +18,41 @@
 
 }
 
+.top {
+	text-align: center;
+	font-size: $base-size*2;
+	transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	margin: 12px 0;
+	
+}
+.bottom {
+	font-size: $base-size*2;
+	margin: 0 ;
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.left {
+	font-size: $base-size*2;
+	margin: 0 16px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.right {
+	font-size: $base-size*2;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 95%;
+}
+
+
+
 .innerCircle {	
 	box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
 	margin: 0;
@@ -84,23 +119,36 @@
 	padding: $base-size;
 	font-size: $base-size*2;
 	margin: $base-size auto;
+	width: 70%;
+}
+
+.colorPicker {
+	margin-top: 8px;
+}
+
+.timeContainer {
 	width: 100%;
+	height: 10vh;
+}
+
+.info {
+	width: 50%;
+	display: inline-block;
 }
 
 .time {
+	width: 100px;
 	background-color: $color-four;
 	color: black;
-	min-width: 0;
 	font-size: $base-size*2;
-	margin: $base-size;
+	margin: $base-size 0;
 }
 
 
 .duration {
-
-	width: 30%;
+	width: 100px;
 	font-size: $base-size*2;
-	margin: $base-size*3;
+	margin: $base-size 0;
 }
 
 .back {
@@ -124,7 +172,7 @@
 	cursor: pointer;
 	color: $color-two;
 	background-color: green;
-	margin-top: $base-size*8;	
+	margin-top: $base-size;	
 	border: solid 4px green;
 	display: inline-block;
 	width: 100%;

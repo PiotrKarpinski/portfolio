@@ -5,7 +5,7 @@ import MainLayout from './components/layout/MainLayout/MainLayout';
 import Audio from './components/views/Audio/Audio';
 import Home from './components/views/Home/Home';
 import Photoshop from './components/views/Photoshop/Photoshop';
-import Calculator from './components/views/Calculator/Calculator';
+import Calculator from './components/views/Calculator/CalculatorContainer';
 import OrganizerClock from './components/views/Organizer/OrganizerClockContainer';
 import OrganizerAdd from './components/views/Organizer/OrganizerContainer';
 import {AnimatedSwitch} from 'react-router-transition';

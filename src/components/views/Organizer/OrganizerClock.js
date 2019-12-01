@@ -19,7 +19,12 @@ return(
     <h2 className={styles.title}>Organizer</h2>
     <div className={`main ${color}`}>
 
-      <div className={styles.circle} style={circleStyle}>
+
+    <div className={styles.circle} style={circleStyle}>    
+    <p style = {{ textAlign: 'center',color: 'black'}} className={styles.top}>12</p>
+    <p style = {{ float:'left',color: 'black'}} className={styles.right}>3</p>
+    <p style = {{ float:'right',color: 'black'}} className={styles.bottom}>6</p>
+    <p style = {{ textAlign: 'center',color: 'black'}} className={styles.left}>9</p>
         <div className={styles.innerCircle}>              
       	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/organizer/add`}></Link>
         <p className={styles.addLink}>Click!</p>
