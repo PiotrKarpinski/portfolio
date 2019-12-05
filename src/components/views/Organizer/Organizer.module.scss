@@ -1,7 +1,11 @@
 @import '../../../style/settings.scss';
 
 
-
+.row {
+	margin-top: $base-size*4;
+	display: flex;
+	justify-content: space-around;
+}
 
 .circle {	
    box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
@@ -176,4 +180,21 @@
 	border: solid 4px green;
 	display: inline-block;
 	width: 100%;
+}
+
+.taskInfo {
+	font-size: $base-size*2;
+   box-shadow: inset 0px 2px 18px 9px rgba(0,0,0,0.08);
+	padding: $base-size;
+	color: black;
+	width: $base-size*30;
+	background-color: #F3F3F3;
+	border-radius: 6px;
+}
+
+.barColor {
+	width: $base-size*30;
+	padding: $base-size;
+	border-radius: 6px;
+
 }

@@ -8,3 +8,26 @@
     padding: $base-size*2;
 	background-color: $color-default;
 }
+
+.cardLink {
+	transition: $transition;
+	border-radius: 6px;
+	border: 3px solid $color-four;
+	margin: $base-size*2;
+	list-style-type: none;
+
+}
+.cardLink a:hover {
+	color: $color-one;
+background-color: $color-four;
+}
+
+
+.cardLink a {
+	transition: $transition;
+	background-color: $color-one;
+	display: block;
+	width: 100%;
+	color: $color-four;
+	text-decoration: none;
+} 

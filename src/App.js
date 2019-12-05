@@ -11,7 +11,6 @@ import OrganizerAdd from './components/views/Organizer/OrganizerContainer';
 import {AnimatedSwitch} from 'react-router-transition';
 import './index.css';
 import Projects from './components/views/Projects/ProjectsContainer';
-import Footer from './components/layout/Footer/Footer';
 
 
 function App() {

@@ -26,8 +26,10 @@ const Header = ({color}) => (
   <div className={styles.component}>
 
     <div className={`image ${color}`} style={ changeBackground(color) }> 
+    <div className={styles.header}>
   <h1 className={styles.title}>PORTFOLIO PAGE</h1>
   <h2 className={styles.subtitle}>Click below to download my CV</h2>
+  </div>
     <div className={styles.download}>
        <Button text='fa fa-download' />
     </div>

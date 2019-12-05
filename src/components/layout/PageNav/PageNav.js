@@ -30,9 +30,9 @@ const PageNav = ({changeColor,color}) => (
 
        <nav className={styles.projects} ref={bar}>
        		<Link to ={`${process.env.PUBLIC_URL}/`} onClick={e => 
-       {changeColor('default'); {console.log(color)}}} className={styles.link}>DEFAULT</Link>				    
+       {changeColor('default'); console.log(color)}} className={styles.link}>DEFAULT</Link>				    
 		<Link to ={`${process.env.PUBLIC_URL}/`} onClick={e => 
-       {changeColor('dark'); {console.log(color)}}} className={styles.link}>DARK</Link>
+       {changeColor('dark'); console.log(color)}} className={styles.link}>DARK</Link>
 		<Link to ={`${process.env.PUBLIC_URL}/`} onClick={e => 
        {changeColor('frozen')}} className={styles.link}>FROZEN</Link>
 		 

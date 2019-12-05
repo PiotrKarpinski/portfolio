@@ -2,9 +2,20 @@
 
 
 .component {
-	margin:24px 0;
+	margin:$base-size*2 0;
 	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
 
+}
+.header {
+	border-bottom-right-radius: 35%;
+	filter: grayscale(80%);
+	position: relative;
+	width: 33%;
+	height: 512px;
+	margin: auto;
+	text-align: center;
+	display: block;
+	box-shadow: 12px 12px 23px -8px rgba(0,0,0,0.28)
 }
 
 .download {
@@ -13,12 +24,12 @@
 	position: absolute;
 	transform: translate(-50%,-50%);
 }
-.title {
+.title {	
 	letter-spacing: $base-size;
 	font-size: $base-size*4;
 	font-family: $font-title;
-	margin-top: $base-size*6;
-    width: 100%;
+	margin: $base-size*6 auto;
+	width: 100%;
     text-align: center;
 	position: absolute;
 }

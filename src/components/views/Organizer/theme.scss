@@ -10,6 +10,14 @@
     position: static;
     padding: $base-size*2;
     display: table;
-  
+    width: 500px;
+}
+.task {
+	box-shadow: 0px 12px 50px 29px rgba(0,0,0,0.18);
+	background-color: $color-default;
+	margin: $base-size*2 auto ;
+    position: static;
+    padding: $base-size*2;
+    display: table;
     width: 500px;
 }
