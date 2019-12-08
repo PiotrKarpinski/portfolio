@@ -18,37 +18,43 @@
 	justify-content: space-around;
 }
 
-.link {
-	margin-top: $base-size*8;
+
+
+.name {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	font-size: $base-size*4;
-	color: $color-four;
-	display: inline-block;
-	text-decoration: none;
-	transition: $transition;
-}
-
-.link:hover {
-	color: $color-one;
 }
 
 
 
-.box{
-	position: relative;
+.box{	
+	background-size: cover;
+	transition: all 1s;
+	margin: $base-size;
 	border: 4px solid $color-four;
 	border-radius: 12px;
 	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
-	width: 40%;
-	padding: $base-size;
+	width: 50%;
 	height: 40vh;
 
 }
 
 
+
+
+@media (max-width: 768px)
+{
+.box{
+	height: 20vh;
+}
+
+
+.title {
+	font-size: $base-size*2;
+}
+
+
+}
 

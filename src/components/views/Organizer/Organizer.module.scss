@@ -52,7 +52,7 @@
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	left: 95%;
+	left: 92%;
 }
 
 
@@ -109,6 +109,7 @@
 }
 
 .title {
+	color: $color-one;
     text-align:center;
 	font-size:36px;
 }
@@ -187,14 +188,49 @@
    box-shadow: inset 0px 2px 18px 9px rgba(0,0,0,0.08);
 	padding: $base-size;
 	color: black;
-	width: $base-size*30;
+	width: 160%;
 	background-color: #F3F3F3;
 	border-radius: 6px;
 }
 
 .barColor {
-	width: $base-size*30;
+	width: 160%;
 	padding: $base-size;
 	border-radius: 6px;
 
 }
+
+@media (max-width: 768px)
+{
+	.row {
+		display: block;
+	}
+
+	.circle {
+		height: 300px;
+		width: 300px;
+	}
+
+	.innerCircle {
+		height: 200px;
+		width: 200px;
+	}
+
+	.text {
+		font-size: $base-size;
+	}
+	.taskInfo {
+		
+		font-size: $base-size;
+	}
+
+	.right {
+
+	left: 92%;
+}
+
+	.bottom {
+		top: 93%;
+	}
+
+	}

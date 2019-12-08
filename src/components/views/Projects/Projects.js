@@ -11,12 +11,12 @@ const Projects = ({color}) => (
   <h1 className={styles.title}>MY PROJECTS:</h1>
  	<div className={styles.row} >
   	<div className={styles.box}>
-    <Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/calculator`}>CALCULATOR<br/><i className='icon fa fa-calculator'/></Link>
+    <Link className='link calculatorLink' to ={`${process.env.PUBLIC_URL}/projects/calculator`}><div className={styles.name}>CALCULATOR<br/><i className='icon fa fa-calculator'/></div></Link>
    
     </div>
 	
 	<div className={styles.box}>
-	<Link className={styles.link} to ={`${process.env.PUBLIC_URL}/projects/organizer`}>ORGANIZER<br/><i className='icon fa fa-calendar'/></Link>
+	<Link className='link organizerLink' to ={`${process.env.PUBLIC_URL}/projects/organizer`}><div className={styles.name}>ORGANIZER<br/><i className='icon fa fa-calendar'/></div></Link>
 
     </div>
     </div>

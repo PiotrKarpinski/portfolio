@@ -31,3 +31,18 @@ background-color: $color-four;
 	color: $color-four;
 	text-decoration: none;
 } 
+
+@media (max-width: 768px)
+{
+
+.component {
+	margin: 0 auto;
+	box-shadow: none;
+}
+
+.cardLink {
+	margin: $base-size;
+
+}
+
+}

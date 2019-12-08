@@ -16,6 +16,7 @@
 
 
 .title {
+	color: $color-one;
     text-align:center;
 	font-size:36px;
 }
@@ -49,4 +50,12 @@
 	color: $color-four;
 
 
+}
+
+@media (max-width: 768px)
+{
+
+.component {
+	margin-bottom: $base-size;
+	}
 }

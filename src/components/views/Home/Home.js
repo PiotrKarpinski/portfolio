@@ -15,14 +15,14 @@ const Home = (props) => (
     <About />
 
 	<div className={styles.projects}>
-	
+	{console.log(props)}
 	{props.children}
     </div>
   
 
-  <Footer />
+   <Footer />
+
   </div>
- 
 
 	)
 

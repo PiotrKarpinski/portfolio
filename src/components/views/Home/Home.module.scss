@@ -2,7 +2,6 @@
 
 .component {
 	background-color: $color-four;
-	padding: 0 $base-size*6;
 }
 
 .title {
@@ -25,6 +24,31 @@
 
 .projects {
 	height: 80vh;
-	margin-top: $base-size;
+	position: relative;
 	transition: $transition;
 }
+
+
+
+@media (max-width: 768px)
+{
+
+.component {
+padding: 0;
+}
+
+.projects {
+	margin-bottom: 160px;
+}
+}
+
+@media (max-width: 450px)
+{
+
+
+
+.projects {
+	margin-bottom: 460px;
+}
+}
+

@@ -9,8 +9,56 @@
 	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.18) , 32px 12px 43px -8px rgba(0,0,0,0.18);
 }
 
-.icon {
-	margin: $base-size auto;
+.link {
+	background-size: cover;
+	position: relative;
+	height: 100%;
+	width: 100%;
 	font-size: $base-size*4;
-	padding: $base-size*2;
+	display: inline-block;
+	text-decoration: none;
+	transition: $transition;
+}
+
+
+
+.link:hover {
+	color: $color-one;
+}
+
+.calculatorLink {
+	color: white;
+	background-image: url(../../../images/calculator.jpg);
+
+}
+
+.organizerLink {
+	color: black;
+	background-image: url(../../../images/organizer.jpg);
+
+}
+
+.icon {
+	margin: auto;
+	font-size: $base-size*2;
+}
+
+@media (max-width: 768px)
+{
+
+
+
+.wrapper {
+	padding: $base-size*4;
+}
+
+.link {
+	font-size: $base-size;
+}
+
+.icon {
+	margin-top: 36px;
+	font-size: $base-size*4;
+}
+
 }

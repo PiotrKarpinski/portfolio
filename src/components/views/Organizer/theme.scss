@@ -21,3 +21,18 @@
     display: table;
     width: 500px;
 }
+
+@media (max-width: 768px)
+{
+
+    .main {
+        width: 350px;
+    }
+
+    .task {
+        display: block;
+        width: 350px;
+    }
+
+
+    }

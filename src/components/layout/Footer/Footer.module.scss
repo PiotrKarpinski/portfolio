@@ -1,23 +1,28 @@
 @import '../../../style/settings.scss';
 
 .component {
+	height: 12px;
 	width: 100%;
 	background-color: $color-four;
 }
 
 .text {
-	margin-right: $base-size;
+	bottom: 50%;
+	transform: translateY(50%);
+	margin: 12px;
+	margin-top: 0;
 	float: left;
 	font-size: $base-size;
 	color: black;
 }
 
 .links {
-	margin-right: $base-size;
+	
 	list-style-type: none;
 }
 
 .icon {
+
 	margin-right: 4px;
 	font-size: $base-size*2;
 	color: black;
@@ -25,4 +30,24 @@
 
 .icon:hover {
 	color: $color-one;
+}
+
+@media (max-width: 768px)
+{
+
+
+
+.text {
+	float: none;
+	text-align: center;
+	font-size: $base-size*0.7;
+}
+
+.links {
+	display: none;
+	
+}
+
+
+
 }
