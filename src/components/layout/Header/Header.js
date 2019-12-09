@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import Button from '../../common/Button/Button';
 import './theme.scss'
 import BackgroundDark from '../../../images/dark.jpg'
 import BackgroundFrozen from '../../../images/frozen.jpg'
@@ -30,7 +29,7 @@ const Header = ({color}) => (
   <h1 className={styles.title}>Click below to download my CV</h1>
   </div>
     <div className={styles.download}>
-       <a href='https://docdro.id/lHwQWRm' target='_blank' className={styles.link}><i className='fa fa-download' /></a>
+       <a href='https://docdro.id/lHwQWRm' target='_blank' rel="noopener noreferrer" className={styles.link}><i className='fa fa-download' /></a>
     </div>
     
     </div> 

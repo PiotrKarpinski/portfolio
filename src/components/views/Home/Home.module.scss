@@ -23,14 +23,15 @@
 }
 
 .projects {
-	height: 80vh;
+	margin-bottom: 160px;
+	height: 1000px;
 	position: relative;
 	transition: $transition;
 }
 
 
 
-@media (max-width: 768px)
+@media (max-width: 1068px)
 {
 
 .component {

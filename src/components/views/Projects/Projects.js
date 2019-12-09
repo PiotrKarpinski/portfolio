@@ -11,13 +11,13 @@ const Projects = ({color}) => (
   <h1 className={styles.title}>MY PROJECTS:</h1>
  	<div className={styles.row} >
   	<div className={styles.box}>
-    <Link className='link calculatorLink' to ={`${process.env.PUBLIC_URL}/projects/calculator`}><div className={styles.name}>CALCULATOR<br/><i className='icon fa fa-calculator'/></div></Link>
+    <Link className='link calculatorLink' to ={`${process.env.PUBLIC_URL}/projects/calculator`}><div className={styles.name}>CALCULATOR</div></Link>
    
     </div>
 	
 	<div className={styles.box}>
-	<Link className='link organizerLink' to ={`${process.env.PUBLIC_URL}/projects/organizer`}><div className={styles.name}>ORGANIZER<br/><i className='icon fa fa-calendar'/></div></Link>
-
+	<Link className='link organizerLink' to ={`${process.env.PUBLIC_URL}/projects/organizer`}><div className={styles.name}>ORGANIZER*</div> 
+</Link>*Does not work on Microsoft Edge, Firefox and Internet Explorer
     </div>
     </div>
     </div>

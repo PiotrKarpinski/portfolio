@@ -21,6 +21,11 @@
 
 
 .name {
+	filter: unset;
+	border-radius: 6px;
+	transition: $transition;
+	padding: 12px;
+	background-color: $color-one;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -29,27 +34,40 @@
 
 
 
+
 .box{	
+	filter: contrast(90%);
+	margin:$base-size*2;
 	background-size: cover;
 	transition: all 1s;
-	margin: $base-size;
 	border: 4px solid $color-four;
 	border-radius: 12px;
 	box-shadow: -32px 12px 43px -8px rgba(0,0,0,0.08) , 32px 12px 43px -8px rgba(0,0,0,0.08);
 	width: 50%;
-	height: 40vh;
+	height: 50vh;
 
 }
 
 
 
 
-@media (max-width: 768px)
+@media (max-width: 1068px)
 {
-.box{
-	height: 20vh;
+
+.row {
+	display: block;
 }
 
+.box{
+	margin:$base-size*2 auto;
+	height: 300px;
+	width: 80%;
+	display: block;
+}
+
+.name {
+	font-size: $base-size*2;
+}
 
 .title {
 	font-size: $base-size*2;
@@ -57,4 +75,9 @@
 
 
 }
-
+@media (max-width: 568px)
+{
+.box {
+	height: 200px;
+}
+}

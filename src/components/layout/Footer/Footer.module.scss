@@ -32,12 +32,13 @@
 	color: $color-one;
 }
 
-@media (max-width: 768px)
+@media (max-width: 1068px)
 {
 
 
 
 .text {
+	
 	float: none;
 	text-align: center;
 	font-size: $base-size*0.7;

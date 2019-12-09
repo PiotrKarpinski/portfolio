@@ -8,8 +8,9 @@
 }
 .header {
 	border-bottom-right-radius: 35%;
+	-webkit-filter: grayscale(90%); /* WebKit */
 	filter: grayscale(90%);
-	width: 33%;
+	width: 40%;
 	height: 512px;
 	margin: auto;
 	box-shadow: 12px 12px 23px -8px rgba(0,0,0,0.28)
@@ -19,6 +20,10 @@
 	left: 50%;
 	top: 50%;
 	position: absolute;
+	-webkit-transform: translate(-50%,-50%); /* WebKit */
+    -moz-transform: translate(-50%,-50%); /* Mozilla */
+    -o-transform: translate(-50%,-50%); /* Opera */
+    -ms-transform: translate(-50%,-50%); /* Internet Explorer */
 	transform: translate(-50%,-50%);
 }
 
@@ -73,6 +78,17 @@ background-color: $color-four;
 90% { margin-top: $base-size*2 }
 100% { margin-top: $base-size*2 }
 }
+
+@media (max-width: 1482px) {
+	.header {
+		width: 60%;
+	}
+	.title {
+		font-size: $base-size;
+	}
+}
+
+
 
 @media (max-width: 768px)
 {

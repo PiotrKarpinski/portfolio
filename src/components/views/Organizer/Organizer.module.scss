@@ -1,10 +1,14 @@
 @import '../../../style/settings.scss';
 
 
+.component {
+	margin-bottom: 24px;
+}
+
 .row {
 	margin-top: $base-size*4;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .circle {	
@@ -52,7 +56,7 @@
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	left: 92%;
+	left: 95%;
 }
 
 
@@ -70,12 +74,6 @@
    background-color: $color-two;
    
 }
-
-
-
-
-
-
 
 
 .link {
@@ -142,7 +140,8 @@
 }
 
 .time {
-	width: 100px;
+	padding: 0;
+	width: 105px;
 	background-color: $color-four;
 	color: black;
 	font-size: $base-size*2;
@@ -151,7 +150,7 @@
 
 
 .duration {
-	width: 100px;
+	width: 105px;
 	font-size: $base-size*2;
 	margin: $base-size 0;
 }
@@ -200,7 +199,7 @@
 
 }
 
-@media (max-width: 768px)
+@media (max-width: 1068px)
 {
 	.row {
 		display: block;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.scss';
 import './theme.scss';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 
 
 const button = React.createRef();
@@ -12,7 +12,7 @@ function handleClick() {
 
 	button.current.classList.contains('clicked') ?
     style =  {}
-    : style = {transform: 'rotate3d(1,1,1,360deg)'};
+    : style = {transform: 'rotate3d(1,1,1,360deg)', WebkitTransform: 'rotate3d(1,1,1,360deg)'};
 
 	button.current.classList.toggle('clicked');
 
