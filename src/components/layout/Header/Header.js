@@ -25,9 +25,7 @@ const Header = ({color}) => (
   <div className={styles.component}>
 
     <div className={`image ${color}`} style={ changeBackground(color) }> 
-    <div className={styles.header}>
   <h1 className={styles.title}>Click below to download my CV</h1>
-  </div>
     <div className={styles.download}>
        <a href='https://docdro.id/lHwQWRm' target='_blank' rel="noopener noreferrer" className={styles.link}><i className='fa fa-download' /></a>
     </div>
