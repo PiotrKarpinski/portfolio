@@ -17,28 +17,21 @@ class Calculator extends React.Component {
     }
 
     handleChange(event) {
+
         this.setState({value: event.target.value})
         event.preventDefault()
     }
 
     insert(num) {
-      
-      this.setState({value: this.state.value+num})
-        
 
-
+      this.setState({value: this.state.value+num})      
     }
 
-    equal() {
-      let arr = this.state.value
-      var lastChar = arr[arr.length -1]
-      
-      console.log(lastChar)
-      if (isNaN(lastChar)===false){
-      this.setState({value: ''+eval(this.state.value)+''})
+   
 
-      }
-       
+    equal() {
+    
+      this.setState({value: ''+eval(this.state.value)+''})  
     
     }
 
@@ -47,8 +40,10 @@ class Calculator extends React.Component {
     }
 
     back() {
-      let arr = this.state.value
+      const arr = this.state.value
+      if(arr.length >= 1) {
       this.setState({value: arr.substring(0,arr.length-1)})
+    }
       console.log(arr)
       
     }
@@ -58,6 +53,7 @@ class Calculator extends React.Component {
     render() {
     const {color} = this.props
     return (
+      
 
   <div className={styles.component}>
 
@@ -109,7 +105,7 @@ class Calculator extends React.Component {
   </div>
 
   </div>
-    <Button text='fa fa-level-up'/>
+    <Button icon='fa fa-level-up'/>
 
 
   </div>
@@ -117,5 +113,6 @@ class Calculator extends React.Component {
 	)
   }
 }
+
 
 export default Calculator;

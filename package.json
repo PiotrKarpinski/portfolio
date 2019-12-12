@@ -7,6 +7,7 @@
     "@material-ui/icons": "^4.5.1",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
     "rc-color-picker": "^1.2.6",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
@@ -24,9 +25,12 @@
         "pre-commit": "lint-staged"
       }
     },
-    "lint-staged": {
-      "src/**/*.js": "eslint"
-    },
+ "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "prettier --write",
+    "git add"
+   ]
+ },
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,8 +59,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.3",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
     "redux-devtools-extension": "2.13.8"
   }
 }

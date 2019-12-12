@@ -5,6 +5,9 @@ import {Link} from 'react-router-dom';
 import TimePicker from 'react-time-picker'
 import ColorPicker from 'rc-color-picker';
 import './theme.scss';
+import Icon from '../../common/Icon/Icon';
+
+
 
 class OrganizerAdd extends React.Component { 
     constructor(props) {
@@ -41,7 +44,7 @@ class OrganizerAdd extends React.Component {
     
 
     <div className={`main ${color}`}>    
-    <Link className={styles.back} to ={`${process.env.PUBLIC_URL}/projects/organizer`}><i className='fa fa-close' /></Link>
+    <Link className={styles.back} to ={`${process.env.PUBLIC_URL}/projects/organizer`}><Icon icon='fa fa-close' /></Link>
       <div className ={styles.form}>
       	<input type='text' name='title'  className={styles.text} onChange={this.handleChange} placeholder='Add title'/>
       	<input type='textarea' name='description' className={styles.text} onChange={this.handleChange} placeholder='Describe your task'/>
@@ -65,11 +68,9 @@ class OrganizerAdd extends React.Component {
     </div>        
 
       </div>
-      <div className={styles.buttons}>
      <Link className={styles.add} to ={`${process.env.PUBLIC_URL}/projects/organizer`} onClick={e => 
-       {addToDo(this.state.value)}}><i className='fa fa-check' /></Link>
-      </div>
-    </div>
+       {addToDo(this.state.value)}}><Icon icon='fa fa-plus' /></Link>
+          </div>
  
   </div>
 

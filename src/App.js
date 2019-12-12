@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import styles from './App.css';
+import './App.css';
 import MainLayout from './components/layout/MainLayout/MainLayout';
 import Audio from './components/views/Audio/Audio';
 import Home from './components/views/Home/Home';
@@ -23,7 +23,7 @@ function App() {
       <AnimatedSwitch atEnter={{opacity: 1 ,translateY:500 }}
       atLeave={{opacity: 0 ,translateY:-500}}
       atActive={{ opacity: 1 ,translateY:0, }}
-      className='switchWrapper'
+      className='switch-wrapper'
       mapStyles={styles => ({
               transform: `translateY(${styles.translateY}px)`,
               opacity: styles.opacity,

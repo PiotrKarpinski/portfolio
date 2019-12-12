@@ -26,7 +26,7 @@ const About = ({color, reverseCard, card}) => (
 
 
 
-  <div className={`component ${color}`}>
+  <section className={`component ${color}`}>
    <div className={styles.container}>
    <div className={styles.image}>
    </div>
@@ -37,7 +37,7 @@ const About = ({color, reverseCard, card}) => (
   </div>
   <div className={styles.click}>
   <button ref={button} onClick={e => 
-       { 	button.current.classList.contains('clicked') ?
+       {button.current.classList.contains('clicked') ?
  reverseCard('I am young and promising Front-end Developer who has solid foundation and constant will to gain knowledge. Currently, I am looking for work in Wrocław. You can contact with me via email. I also invite you to take a look at my GitHub and LinkedIn profiles.')
   : reverseCard(cardLinks); handleClick();}} className={styles.link}>C<br />L<br />I<br />C<br />K</button>
   </div>  
@@ -45,7 +45,7 @@ const About = ({color, reverseCard, card}) => (
   </div>  
 
   </div>
-  </div>
+  </section>
 
 )
 

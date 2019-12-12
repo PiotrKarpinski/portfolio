@@ -114,7 +114,7 @@ return(
     </div>
     </div>
     </div>
-    <Button text='fa fa-level-up'/>
+    <Button icon='fa fa-level-up'/>
 
 
   </div>
